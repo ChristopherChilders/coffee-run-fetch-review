@@ -1,0 +1,43 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+html, body{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .1);
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+.index {
+    display: flex;
+    flex-direction: row;
+    height: 10%;
+}
+.index li{
+    display: flex;
+    flex-direction: column;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    height: 80%;
+}
+
+.email-orderer{
+    width: 33%;
+    background-color: rgba(155, 0, 0, .5);
+}
+
+.order-info{
+    width: 66%;
+    background-color: rgba(0, 155, 0, .5);
+}
