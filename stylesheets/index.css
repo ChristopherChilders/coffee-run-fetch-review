@@ -18,13 +18,13 @@ body{
 }
 
 .index {
-    display: flex;
-    flex-direction: row;
-    height: 10%;
+    display: table;
+    width: 100%;
+    text-align: center;
 }
+
 .index li{
-    display: flex;
-    flex-direction: column;
+    display: table-cell;
 }
 .content{
     display: flex;
